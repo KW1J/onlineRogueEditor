@@ -40,10 +40,6 @@ When you launch the tool and login it will create a trainer.json - this is your 
 
 We will not use the tool 24/7 - this means we will not see when it breaks due to changes on PokeRoGue's site. Please report on our discord or GitHub whenever you cannot finish any action.
 
-**IMPORTANT**
-When you encounter multiple 403 Forbiddens - it's usually not on us. Retry to a later point or contact us to rebuild a new header seed file. We programmed a hotfix method in for this case.
-
-
 ## FAQ
 
 - How do i revert my changes?
@@ -57,8 +53,6 @@ When you encounter multiple 403 Forbiddens - it's usually not on us. Retry to a 
 - Where can i donate?
   - We will not accept any money or any form of payment. If you want to help then only by contributing.
 
-- Why are some features limited?
-  - In our core we don't like cheating. This is and will be mostly for educational purposes, if you want to edit your money and such in daily runs theres other options. We deny any changes made to gameMode 3 which is daily seeded runs.
 
 ## How to use the tool
 
@@ -76,6 +70,11 @@ When you encounter multiple 403 Forbiddens - it's usually not on us. Retry to a 
  
 ## Editor Features
 
+- Extensive Logging in local log file
+- Avoiding bot-detection and therefor authorization issues
+  - Rate Limiting
+  - Random Delays 
+
 - Autocomplete recomendations
 
 ![Preview Image](.github/previews/autocomplete.png)
@@ -86,7 +85,6 @@ When you encounter multiple 403 Forbiddens - it's usually not on us. Retry to a 
 
 - When logging in it will automatically create backups for you.
   - You can restore backups easily see preview above
-
 
 - Load data from server
   - This will fetch the trainer.json containing your account save data
@@ -146,7 +144,7 @@ When you encounter multiple 403 Forbiddens - it's usually not on us. Retry to a 
 - Display all Nature Slot IDs
 - Save data to server via open accesible API calls
 
-- Propper logging in case you need to troubleshoot
+### You cannot edit daily runs with this tool
 
 ## How to run from code
  - Install python
